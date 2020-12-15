@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <title>Welcome!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/countdown.css">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="countdown">  
+
+<p id="demo"></p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 24, 2020 21:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+
+</div>
+
+<div class="gallery-text">
+  <p>
+      until the
+   
+    </p>
+    <p>Annual Christmas Sh*t of 2020</p>
+      
+    </p>
+</div>
+   
+
+  </header>
+
+
+
+    <div class="gallery">
+      <figure class="gallery-item">
+        <a href="about.html"> <img class="thumbnail" src="img/deerjumping.gif"></a>
+      
+        
+      </figure>
+
+      
+    </div>
+  
+
+ <a class="click" href="about.html">Click to enter:</a>
+
+
+
+</body>
+
+</html>
